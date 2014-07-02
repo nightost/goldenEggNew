@@ -1,0 +1,16 @@
+body{
+	background: url("../images/red-bg.png") repeat;
+	position: absolute;
+}
+.middle-bg{
+	height: 5.15em;
+	margin-top: 13.17em;
+	background: url("../images/middle-bg.png");
+	background-size: 100% auto;
+	background-position: left top;
+}
+.rulesbox{
+	position: absolute;
+	top: 5.15em;+;
+	bottom: 0px;
+}
