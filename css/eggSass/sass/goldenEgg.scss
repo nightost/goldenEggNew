@@ -31,6 +31,12 @@ html,body{
 				right:-98px;
 				top:-54px;
 				width:111px;
+				-moz-transition: transform 0.5s ease-in;
+				-webkit-transition: transform 0.5s ease-in;
+				transition: transform 0.5s ease-in;
+				-moz-transform-origin: right bottom;
+				-webkit-transform-origin: right bottom;
+				transform-origin: right bottom;
 			}
 		}
 	}
