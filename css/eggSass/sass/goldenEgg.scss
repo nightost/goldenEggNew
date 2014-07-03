@@ -19,16 +19,42 @@ html,body{
 			position:absolute;
 			left:50%;
 			top:(74/12)+em;
-			margin-left:-(219/4)+px;
-			width:(219/2)+px;
+			margin-left:-115px;
+			width:230px;
+			height:168px;
 			.broken-egg{
+				width:110px;
 				position:absolute;
-				bottom:0px;
+				bottom:18px;
+				left:60px;
+				z-index:200;
+				-moz-transition: display 0.3s ease-in 1s;
+				-webkit-transition: display 0.3s ease-in 1s;
+				transition: display 0.3s ease-in 1s;
+			}
+			.egg{
+				width:110px;
+				position:absolute;
+				left:60px;
+				-moz-transition: transform 0.3s ease-in;
+				-webkit-transition: transform 0.3s ease-in;
+				transition: transform 0.3s ease-in;
+				z-index:200;
+			}
+			.flash-light{
+				position:absolute;
+				bottom:30px;
 				left:0px;
+				width:112px;
+				z-index:100;
+				-moz-transition: all 0.3s ease-in;
+				-webkit-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+				transform-origin: center bottom;
 			}
 			.hammer{
 				position:absolute;
-				right:-98px;
+				right:-38px;
 				top:-54px;
 				width:111px;
 				-moz-transition: transform 0.5s ease-in;
@@ -39,12 +65,118 @@ html,body{
 				transform-origin: right bottom;
 			}
 			.hammerEffect{
-				animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+				animation:hammerEffect .5s ease-in 0s 1 normal running ;
 				/* Firefox: */
-				-moz-animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+				-moz-animation:hammerEffect .5s ease-in 0s 1 normal running ;
 				/* Safari and Chrome: */
-				-webkit-animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+				-webkit-animation:hammerEffect .5s ease-in 0s 1 normal running ;
+				//forwards
 
+			}
+			.clips{
+				position:absolute;
+				left:112px;
+				top:83px;
+				z-index:150;
+				span{
+					display:block;
+					position:absolute;
+					top:0px;
+					left:0px;
+					-moz-transition: all 0.3s ease-in-out;
+					-webkit-transition:all 0.3s ease-in-out;
+					transition: all 0.3s ease-in-out;
+				}
+				.clip1{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 0;
+				}
+				.clip2{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -16px;
+				}
+				.clip3{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -31px;
+				}
+				.clip4{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -46px;
+				}
+				.clip5{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -66px;
+				}
+				.clip6{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -83px;
+				}
+				.clip7{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -97px;
+				}
+				.clip8{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -110px;
+				}
+				.clip9{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -110px;
+				}
+				.clip10{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -130px;
+				}
+				.clip11{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -146px;
+				}
+				.clip12{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -161px;
+				}
+				.clip13{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -179px;
+				}
+				.clip14{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -193px;
+				}
+				.clip15{
+					width:7px;
+					height:9px;
+					background:url("../images/clips.png") no-repeat;
+					background-position:0 -198px;
+				}
 			}
 		}
 	}

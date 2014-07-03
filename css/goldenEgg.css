@@ -1,228 +1,277 @@
-/* line 2, eggSass/sass/goldenEgg.scss */
 body {
   background: url("../images/blue-bg.png") repeat-y;
   background-size: 100% auto;
-  background-position: left top;
-}
+  background-position: left top; }
 
-/* line 7, eggSass/sass/goldenEgg.scss */
 html, body {
-  height: 100%;
-}
+  height: 100%; }
 
-/* line 10, eggSass/sass/goldenEgg.scss */
 .wrapper {
   position: relative;
-  height: 100%;
-}
-/* line 13, eggSass/sass/goldenEgg.scss */
-.wrapper .top {
-  background: url(../images/red-bg.png) repeat-y;
-  background-size: 100% auto;
-  background-position: left top;
-  position: relative;
-}
-/* line 18, eggSass/sass/goldenEgg.scss */
-.wrapper .top .egg-box {
-  position: absolute;
-  left: 50%;
-  top: 6.16667em;
-  margin-left: -54.75px;
-  width: 109.5px;
-}
-/* line 24, eggSass/sass/goldenEgg.scss */
-.wrapper .top .egg-box .broken-egg {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-}
-/* line 29, eggSass/sass/goldenEgg.scss */
-.wrapper .top .egg-box .hammer {
-  position: absolute;
-  right: -98px;
-  top: -54px;
-  width: 111px;
-  -moz-transition: transform 0.5s ease-in;
-  -webkit-transition: transform 0.5s ease-in;
-  transition: transform 0.5s ease-in;
-  -moz-transform-origin: right bottom;
-  -webkit-transform-origin: right bottom;
-  transform-origin: right bottom;
-}
-/* line 41, eggSass/sass/goldenEgg.scss */
-.wrapper .top .egg-box .hammerEffect {
-  animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
-  /* Firefox: */
-  -moz-animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
-  /* Safari and Chrome: */
-  -webkit-animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
-}
-/* line 51, eggSass/sass/goldenEgg.scss */
-.wrapper .middle-bg {
-  height: 5.16667em;
-  padding-top: 13.16667em;
-  background: url("../images/middle-bg.png") no-repeat;
-  background-size: 100% auto;
-  background-position: left bottom;
-}
-/* line 58, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox {
-  width: 100%;
-  background-size: 100% auto;
-}
-/* line 64, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule {
-  background: #fff;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  box-shadow: 0px 0px 0px 1px #90a5b7;
-  margin: 30px auto 0px;
-  width: 90.625%;
-  padding: 3px;
-  position: relative;
-}
-/* line 75, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule .dash-border {
-  border: 1px dashed #686868;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-}
-/* line 80, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule .dash-border ul {
-  margin-top: 2.08333em;
-  margin-left: 1.25em;
-  margin-bottom: 1em;
-}
-/* line 84, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule .dash-border ul li {
-  color: #000;
-  font-size: 0.91667em;
-  line-height: 1.66667em;
-}
-/* line 90, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule .dash-border p {
-  margin-top: 2.08333em;
-  color: #000;
-  font-size: 0.91667em;
-  margin-bottom: 1em;
-  line-height: 1.66667em;
-  margin-left: 1.25em;
-}
-/* line 99, eggSass/sass/goldenEgg.scss */
-.wrapper .rulesbox .rule .title {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  width: 73px;
-  height: 22.5px;
-  line-height: 22.5px;
-  text-align: center;
-  background: url(../images/title_bg.png);
-  background-size: 100% auto;
-  font-size: 1em;
-  color: #fff;
-}
+  height: 100%; }
+  .wrapper .top {
+    background: url(../images/red-bg.png) repeat-y;
+    background-size: 100% auto;
+    background-position: left top;
+    position: relative; }
+    .wrapper .top .egg-box {
+      position: absolute;
+      left: 50%;
+      top: 6.16667em;
+      margin-left: -115px;
+      width: 230px;
+      height: 168px; }
+      .wrapper .top .egg-box .broken-egg {
+        width: 110px;
+        position: absolute;
+        bottom: 18px;
+        left: 60px;
+        z-index: 200;
+        -moz-transition: display 0.3s ease-in 1s;
+        -webkit-transition: display 0.3s ease-in 1s;
+        transition: display 0.3s ease-in 1s; }
+      .wrapper .top .egg-box .egg {
+        width: 110px;
+        position: absolute;
+        left: 60px;
+        -moz-transition: transform 0.3s ease-in;
+        -webkit-transition: transform 0.3s ease-in;
+        transition: transform 0.3s ease-in;
+        z-index: 200; }
+      .wrapper .top .egg-box .flash-light {
+        position: absolute;
+        bottom: 30px;
+        left: 0px;
+        width: 112px;
+        z-index: 100;
+        -moz-transition: all 0.3s ease-in;
+        -webkit-transition: all 0.3s ease-in;
+        transition: all 0.3s ease-in;
+        transform-origin: center bottom; }
+      .wrapper .top .egg-box .hammer {
+        position: absolute;
+        right: -38px;
+        top: -54px;
+        width: 111px;
+        -moz-transition: transform 0.5s ease-in;
+        -webkit-transition: transform 0.5s ease-in;
+        transition: transform 0.5s ease-in;
+        -moz-transform-origin: right bottom;
+        -webkit-transform-origin: right bottom;
+        transform-origin: right bottom; }
+      .wrapper .top .egg-box .hammerEffect {
+        animation: hammerEffect 0.5s ease-in 0s 1 normal running;
+        /* Firefox: */
+        -moz-animation: hammerEffect 0.5s ease-in 0s 1 normal running;
+        /* Safari and Chrome: */
+        -webkit-animation: hammerEffect 0.5s ease-in 0s 1 normal running; }
+      .wrapper .top .egg-box .clips {
+        position: absolute;
+        left: 112px;
+        top: 83px;
+        z-index: 150; }
+        .wrapper .top .egg-box .clips span {
+          display: block;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          -moz-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out; }
+        .wrapper .top .egg-box .clips .clip1 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 0; }
+        .wrapper .top .egg-box .clips .clip2 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -16px; }
+        .wrapper .top .egg-box .clips .clip3 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -31px; }
+        .wrapper .top .egg-box .clips .clip4 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -46px; }
+        .wrapper .top .egg-box .clips .clip5 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -66px; }
+        .wrapper .top .egg-box .clips .clip6 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -83px; }
+        .wrapper .top .egg-box .clips .clip7 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -97px; }
+        .wrapper .top .egg-box .clips .clip8 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -110px; }
+        .wrapper .top .egg-box .clips .clip9 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -110px; }
+        .wrapper .top .egg-box .clips .clip10 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -130px; }
+        .wrapper .top .egg-box .clips .clip11 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -146px; }
+        .wrapper .top .egg-box .clips .clip12 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -161px; }
+        .wrapper .top .egg-box .clips .clip13 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -179px; }
+        .wrapper .top .egg-box .clips .clip14 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -193px; }
+        .wrapper .top .egg-box .clips .clip15 {
+          width: 7px;
+          height: 9px;
+          background: url("../images/clips.png") no-repeat;
+          background-position: 0 -198px; }
+  .wrapper .middle-bg {
+    height: 5.16667em;
+    padding-top: 13.16667em;
+    background: url("../images/middle-bg.png") no-repeat;
+    background-size: 100% auto;
+    background-position: left bottom; }
+  .wrapper .rulesbox {
+    width: 100%;
+    background-size: 100% auto; }
+    .wrapper .rulesbox .rule {
+      background: #fff;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      box-shadow: 0px 0px 0px 1px #90a5b7;
+      margin: 30px auto 0px;
+      width: 90.625%;
+      padding: 3px;
+      position: relative; }
+      .wrapper .rulesbox .rule .dash-border {
+        border: 1px dashed #686868;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px; }
+        .wrapper .rulesbox .rule .dash-border ul {
+          margin-top: 2.08333em;
+          margin-left: 1.25em;
+          margin-bottom: 1em; }
+          .wrapper .rulesbox .rule .dash-border ul li {
+            color: #000;
+            font-size: 0.91667em;
+            line-height: 1.66667em; }
+        .wrapper .rulesbox .rule .dash-border p {
+          margin-top: 2.08333em;
+          color: #000;
+          font-size: 0.91667em;
+          margin-bottom: 1em;
+          line-height: 1.66667em;
+          margin-left: 1.25em; }
+      .wrapper .rulesbox .rule .title {
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        width: 73px;
+        height: 22.5px;
+        line-height: 22.5px;
+        text-align: center;
+        background: url(../images/title_bg.png);
+        background-size: 100% auto;
+        font-size: 1em;
+        color: #fff; }
 
 /**
 *hammerEffect
 */
 @keyframes hammerEffect {
-  /* line 120, eggSass/sass/goldenEgg.scss */
   0% {
     background: red;
     left: 0px;
-    top: 0px;
-  }
+    top: 0px; }
 
-  /* line 121, eggSass/sass/goldenEgg.scss */
   25% {
     background: yellow;
     left: 200px;
-    top: 0px;
-  }
+    top: 0px; }
 
-  /* line 122, eggSass/sass/goldenEgg.scss */
   50% {
     background: blue;
     left: 200px;
-    top: 200px;
-  }
+    top: 200px; }
 
-  /* line 123, eggSass/sass/goldenEgg.scss */
   75% {
     background: green;
     left: 0px;
-    top: 200px;
-  }
+    top: 200px; }
 
-  /* line 124, eggSass/sass/goldenEgg.scss */
   100% {
     background: red;
     left: 0px;
-    top: 0px;
-  }
-}
-
+    top: 0px; } }
 /* Firefox */
 @-moz-keyframes hammerEffect {
-  /* line 129, eggSass/sass/goldenEgg.scss */
   0% {
     background: red;
     left: 0px;
-    top: 0px;
-  }
+    top: 0px; }
 
-  /* line 130, eggSass/sass/goldenEgg.scss */
   25% {
     background: yellow;
     left: 200px;
-    top: 0px;
-  }
+    top: 0px; }
 
-  /* line 131, eggSass/sass/goldenEgg.scss */
   50% {
     background: blue;
     left: 200px;
-    top: 200px;
-  }
+    top: 200px; }
 
-  /* line 132, eggSass/sass/goldenEgg.scss */
   75% {
     background: green;
     left: 0px;
-    top: 200px;
-  }
+    top: 200px; }
 
-  /* line 133, eggSass/sass/goldenEgg.scss */
   100% {
     background: red;
     left: 0px;
-    top: 0px;
-  }
-}
-
+    top: 0px; } }
 /* Safari Chrome */
 @-webkit-keyframes hammerEffect {
-  /* line 138, eggSass/sass/goldenEgg.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
+    transform: rotate(0deg); }
 
-  /* line 143, eggSass/sass/goldenEgg.scss */
   25% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
-    transform: rotate(25deg);
-  }
+    transform: rotate(25deg); }
 
-  /* line 149, eggSass/sass/goldenEgg.scss */
   100% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-  }
-}
+    transform: rotate(-20deg); } }
