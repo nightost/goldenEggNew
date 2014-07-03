@@ -1,0 +1,112 @@
+/* line 2, eggSass/sass/goldenEgg.scss */
+body {
+  background: url("../images/blue-bg.png") repeat-y;
+  background-size: 100% auto;
+  background-position: left top;
+}
+
+/* line 7, eggSass/sass/goldenEgg.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 10, eggSass/sass/goldenEgg.scss */
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+/* line 13, eggSass/sass/goldenEgg.scss */
+.wrapper .top {
+  background: url(../images/red-bg.png) repeat-y;
+  background-size: 100% auto;
+  background-position: left top;
+  position: relative;
+}
+/* line 18, eggSass/sass/goldenEgg.scss */
+.wrapper .top .egg-box {
+  position: absolute;
+  left: 50%;
+  top: 6.16667em;
+  margin-left: -54.75px;
+  width: 109.5px;
+}
+/* line 24, eggSass/sass/goldenEgg.scss */
+.wrapper .top .egg-box .broken-egg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+/* line 29, eggSass/sass/goldenEgg.scss */
+.wrapper .top .egg-box .hammer {
+  position: absolute;
+  right: -98px;
+  top: -54px;
+  width: 111px;
+}
+/* line 37, eggSass/sass/goldenEgg.scss */
+.wrapper .middle-bg {
+  height: 5.16667em;
+  padding-top: 13.16667em;
+  background: url("../images/middle-bg.png") no-repeat;
+  background-size: 100% auto;
+  background-position: left bottom;
+}
+/* line 44, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox {
+  width: 100%;
+  background-size: 100% auto;
+}
+/* line 50, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule {
+  background: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  box-shadow: 0px 0px 0px 1px #90a5b7;
+  margin: 30px auto 0px;
+  width: 90.625%;
+  padding: 3px;
+  position: relative;
+}
+/* line 61, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule .dash-border {
+  border: 1px dashed #686868;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+/* line 66, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule .dash-border ul {
+  margin-top: 2.08333em;
+  margin-left: 1.25em;
+  margin-bottom: 1em;
+}
+/* line 70, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule .dash-border ul li {
+  color: #000;
+  font-size: 0.91667em;
+  line-height: 1.66667em;
+}
+/* line 76, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule .dash-border p {
+  margin-top: 2.08333em;
+  color: #000;
+  font-size: 0.91667em;
+  margin-bottom: 1em;
+  line-height: 1.66667em;
+  margin-left: 1.25em;
+}
+/* line 85, eggSass/sass/goldenEgg.scss */
+.wrapper .rulesbox .rule .title {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 73px;
+  height: 22.5px;
+  line-height: 22.5px;
+  text-align: center;
+  background: url(../images/title_bg.png);
+  background-size: 100% auto;
+  font-size: 1em;
+  color: #fff;
+}

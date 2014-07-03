@@ -1,0 +1,101 @@
+$baseSize:12;
+body{
+	background: url("../images/blue-bg.png") repeat-y;
+	background-size:100% auto;
+	background-position: left top;
+}
+html,body{
+	height:100%;
+}
+.wrapper{
+	position: relative;
+	height:100%;
+	.top{
+		background:url(../images/red-bg.png) repeat-y;
+		background-size:100% auto;
+		background-position: left top;
+		position:relative;
+		.egg-box{
+			position:absolute;
+			left:50%;
+			top:(74/12)+em;
+			margin-left:-(219/4)+px;
+			width:(219/2)+px;
+			.broken-egg{
+				position:absolute;
+				bottom:0px;
+				left:0px;
+			}
+			.hammer{
+				position:absolute;
+				right:-98px;
+				top:-54px;
+				width:111px;
+			}
+		}
+	}
+	.middle-bg{
+		height: 62/$baseSize+em;
+		padding-top: 158/$baseSize+em;
+		background: url("../images/middle-bg.png") no-repeat;
+		background-size: 100% auto;
+		background-position: left bottom;
+	}
+	.rulesbox{
+		//position: absolute;
+		//top:  (62+158)/$baseSize+em;
+		//bottom: 0px;
+		width:100%;
+		background-size:100% auto;
+		.rule{
+			background:#fff;
+			border-radius:5px;
+			-webkit-border-radius:5px;
+			-moz-border-radius:5px;
+			box-shadow:0px 0px 0px 1px #90a5b7;
+			//height:100/$baseSize+em;
+			margin:30px auto 0px;
+			width:290/320*100%;
+			padding:3px;
+			position:relative;
+			.dash-border{
+				border:1px dashed #686868;
+				border-radius:5px;
+				-webkit-border-radius:5px;
+				-moz-border-radius:5px;
+				ul{
+					margin-top:(25/12)+em;
+					margin-left:(15/12)+em;
+					margin-bottom:1em;
+					li{
+						color:#000;
+						font-size:(11/12)+em;
+						line-height:(20/12)+em;
+					}
+				}
+				p{
+					margin-top:(25/12)+em;
+					color:#000;
+					font-size:(11/12)+em;
+					margin-bottom:1em;
+					line-height:(20/12)+em;
+					margin-left:(15/12)+em;
+				}
+			}
+			.title{
+				position:absolute;
+				top:3px;
+				left:3px;
+				width:73px;
+				height:22.5px;
+				line-height:22.5px;
+				text-align:center;
+				background:url(../images/title_bg.png);
+				background-size:100% auto;
+				font-size:1em;
+				color:#fff;
+			}
+		}	
+	}
+}
+
