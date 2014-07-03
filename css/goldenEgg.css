@@ -49,7 +49,15 @@ html, body {
   -webkit-transform-origin: right bottom;
   transform-origin: right bottom;
 }
-/* line 43, eggSass/sass/goldenEgg.scss */
+/* line 41, eggSass/sass/goldenEgg.scss */
+.wrapper .top .egg-box .hammerEffect {
+  animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
+  /* Firefox: */
+  -moz-animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
+  /* Safari and Chrome: */
+  -webkit-animation: hammerEffect .5s ease-in 0s 1 normal running forwards;
+}
+/* line 51, eggSass/sass/goldenEgg.scss */
 .wrapper .middle-bg {
   height: 5.16667em;
   padding-top: 13.16667em;
@@ -57,12 +65,12 @@ html, body {
   background-size: 100% auto;
   background-position: left bottom;
 }
-/* line 50, eggSass/sass/goldenEgg.scss */
+/* line 58, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox {
   width: 100%;
   background-size: 100% auto;
 }
-/* line 56, eggSass/sass/goldenEgg.scss */
+/* line 64, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule {
   background: #fff;
   border-radius: 5px;
@@ -74,26 +82,26 @@ html, body {
   padding: 3px;
   position: relative;
 }
-/* line 67, eggSass/sass/goldenEgg.scss */
+/* line 75, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border {
   border: 1px dashed #686868;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 72, eggSass/sass/goldenEgg.scss */
+/* line 80, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border ul {
   margin-top: 2.08333em;
   margin-left: 1.25em;
   margin-bottom: 1em;
 }
-/* line 76, eggSass/sass/goldenEgg.scss */
+/* line 84, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border ul li {
   color: #000;
   font-size: 0.91667em;
   line-height: 1.66667em;
 }
-/* line 82, eggSass/sass/goldenEgg.scss */
+/* line 90, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border p {
   margin-top: 2.08333em;
   color: #000;
@@ -102,7 +110,7 @@ html, body {
   line-height: 1.66667em;
   margin-left: 1.25em;
 }
-/* line 91, eggSass/sass/goldenEgg.scss */
+/* line 99, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .title {
   position: absolute;
   top: 3px;
@@ -115,4 +123,106 @@ html, body {
   background-size: 100% auto;
   font-size: 1em;
   color: #fff;
+}
+
+/**
+*hammerEffect
+*/
+@keyframes hammerEffect {
+  /* line 120, eggSass/sass/goldenEgg.scss */
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  /* line 121, eggSass/sass/goldenEgg.scss */
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  /* line 122, eggSass/sass/goldenEgg.scss */
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  /* line 123, eggSass/sass/goldenEgg.scss */
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  /* line 124, eggSass/sass/goldenEgg.scss */
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Firefox */
+@-moz-keyframes hammerEffect {
+  /* line 129, eggSass/sass/goldenEgg.scss */
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+
+  /* line 130, eggSass/sass/goldenEgg.scss */
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+
+  /* line 131, eggSass/sass/goldenEgg.scss */
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+
+  /* line 132, eggSass/sass/goldenEgg.scss */
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+
+  /* line 133, eggSass/sass/goldenEgg.scss */
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+
+/* Safari Chrome */
+@-webkit-keyframes hammerEffect {
+  /* line 138, eggSass/sass/goldenEgg.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  /* line 143, eggSass/sass/goldenEgg.scss */
+  25% {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    transform: rotate(25deg);
+  }
+
+  /* line 149, eggSass/sass/goldenEgg.scss */
+  100% {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
 }

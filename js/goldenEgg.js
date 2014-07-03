@@ -9,10 +9,6 @@ function goldenEgg(){
 	var _hammer=$(".hammer");
 	//event
 	_eggBox.bind("click",function(){
-		_hammer.css({
-			"-webkit-transform":"rotate(-20deg)",
-			"-moz-transform":"rotate(-20deg)",
-			"transform":"rotate(-20deg)",
-		});
+		_hammer.addClass("hammerEffect");
 	});
 }

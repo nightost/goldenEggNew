@@ -38,6 +38,14 @@ html,body{
 				-webkit-transform-origin: right bottom;
 				transform-origin: right bottom;
 			}
+			.hammerEffect{
+				animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+				/* Firefox: */
+				-moz-animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+				/* Safari and Chrome: */
+				-webkit-animation:hammerEffect .5s ease-in 0s 1 normal running forwards;
+
+			}
 		}
 	}
 	.middle-bg{
@@ -102,6 +110,46 @@ html,body{
 				color:#fff;
 			}
 		}	
+	}
+}
+/**
+*hammerEffect
+*/
+@keyframes hammerEffect
+{
+	0%   {background: red; left:0px; top:0px;}
+	25%  {background: yellow; left:200px; top:0px;}
+	50%  {background: blue; left:200px; top:200px;}
+	75%  {background: green; left:0px; top:200px;}
+	100% {background: red; left:0px; top:0px;}
+}
+/* Firefox */
+@-moz-keyframes hammerEffect 
+{
+	0%   {background: red; left:0px; top:0px;}
+	25%  {background: yellow; left:200px; top:0px;}
+	50%  {background: blue; left:200px; top:200px;}
+	75%  {background: green; left:0px; top:200px;}
+	100% {background: red; left:0px; top:0px;}
+}
+/* Safari Chrome */
+@-webkit-keyframes hammerEffect 
+{
+	0%   {
+		-webkit-transform:rotate(0deg);
+		-moz-transform:rotate(0deg);
+		transform:rotate(0deg);
+	}
+	25%  {
+	    -webkit-transform:rotate(25deg);
+		-moz-transform:rotate(25deg);
+		transform:rotate(25deg);
+	}
+
+	100% {
+	    -webkit-transform:rotate(-20deg);
+		-moz-transform:rotate(-20deg);
+		transform:rotate(-20deg);
 	}
 }
 
