@@ -15,10 +15,36 @@ html,body{
 		background-size:100% auto;
 		background-position: left top;
 		position:relative;
+		.tipBox{
+			position: absolute;
+			width: 100%;
+			top:(15/$baseSize)+em;
+			text-align: center;
+			z-index: 1000;
+			span{
+				display: inline-block;
+				padding: (8/$baseSize)+em (25/$baseSize)+em;
+				background: #d71a30;
+				color: #fff;
+				font-size: (15/$baseSize)+em;
+				-moz-transition: all .5s ease-in;
+				-webkit-transition: all .5s ease-in;
+				transition: all .5s ease-in;
+				transform:scale(.5,.5);
+				-moz-transform:scale(0.5,0.5);
+				-webkit-transform:scale(0.5,0.5);
+				opacity: 0;
+			}
+			span.normal{
+				transform:scale(1,1);
+				-moz-transform:scale(1,1);
+				-webkit-transform:scale(1,1);
+			}
+		}
 		.egg-box{
 			position:absolute;
 			left:50%;
-			top:(74/12)+em;
+			top:(84/$baseSize)+em;
 			margin-left:-115px;
 			width:230px;
 			height:168px;
@@ -57,9 +83,9 @@ html,body{
 				right:-38px;
 				top:-54px;
 				width:111px;
-				-moz-transition: transform 0.5s ease-in;
-				-webkit-transition: transform 0.5s ease-in;
-				transition: transform 0.5s ease-in;
+				// -moz-transition: transform 0.5s ease-in;
+				// -webkit-transition: transform 0.5s ease-in;
+				// transition: transform 0.5s ease-in;
 				-moz-transform-origin: right bottom;
 				-webkit-transform-origin: right bottom;
 				transform-origin: right bottom;
@@ -186,6 +212,25 @@ html,body{
 		background: url("../images/middle-bg.png") no-repeat;
 		background-size: 100% auto;
 		background-position: left bottom;
+		position: relative;
+		.agin{
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			background: rgb(212, 74, 74);
+			border-radius: 24px;
+			-webkit-border-radius: 24px;
+			-moz-border-radius: 24px;
+			-moz-transition: all 0.3s ease-in-out;
+			-webkit-transition:all 0.3s ease-in-out;
+			transition: all 0.3s ease-in-out;
+			font-size: 1.2em;
+			color: #fff;
+			padding: 4px;
+			text-align: center;
+			left: 246px;
+			bottom: -5px;
+		}
 	}
 	.rulesbox{
 		//position: absolute;
@@ -210,22 +255,22 @@ html,body{
 				-webkit-border-radius:5px;
 				-moz-border-radius:5px;
 				ul{
-					margin-top:(25/12)+em;
-					margin-left:(15/12)+em;
+					margin-top:(25/$baseSize)+em;
+					margin-left:(15/$baseSize)+em;
 					margin-bottom:1em;
 					li{
 						color:#000;
-						font-size:(11/12)+em;
-						line-height:(20/12)+em;
+						font-size:(11/$baseSize)+em;
+						line-height:(20/$baseSize)+em;
 					}
 				}
 				p{
-					margin-top:(25/12)+em;
+					margin-top:(25/$baseSize)+em;
 					color:#000;
-					font-size:(11/12)+em;
+					font-size:(11/$baseSize)+em;
 					margin-bottom:1em;
-					line-height:(20/12)+em;
-					margin-left:(15/12)+em;
+					line-height:(20/$baseSize)+em;
+					margin-left:(15/$baseSize)+em;
 				}
 			}
 			.title{
