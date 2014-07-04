@@ -1,4 +1,7 @@
+//剩余次数
+var _leftCount=2;
 $(function(){
+
 	var _goldenEgg=new goldenEgg();
 });
 /*
@@ -7,6 +10,11 @@ $(function(){
 function showMessage(str){
 	$("#tipBox span").text(str).addClass("normal").css({
 		opacity:100
+	});
+}
+function hideMessage(str){
+	$("#tipBox span").text(str).removeClass("normal").css({
+		opacity:0
 	});
 }
 /*
@@ -18,6 +26,7 @@ function goldenEgg(){
 	var _brokenEgg=$(".broken-egg");
 	var _Egg=$(".egg");
 	var _flashLight=$(".flash-light");
+	var _again=$(".agin");
 	var _clip1=$(".clip1");
 	var _clip2=$(".clip2");
 	var _clip3=$(".clip3");
@@ -30,10 +39,13 @@ function goldenEgg(){
 	var _clip10=$(".clip10");
 	var _clip11=$(".clip11");
 	var _clip12=$(".clip12");
-	var _clip13=$(".clip14");
+	var _clip13=$(".clip13");
+	var _clip14=$(".clip14");
 	var _clip15=$(".clip15");
+	var _isReset=true;
 	//event
 	_eggBox.bind("click",function(){
+		if(!_isReset) return;
 		_hammer.animate({"-webkit-transform":"rotate(20deg)"},{"duration": 100, "easing": "ease-in","complete":function(){
 			$(this).animate({"-webkit-transform":"rotate(-25deg)"},{"duration": 200, "easing": "ease-in-out","complete":function(){
 				$(this).animate({"-webkit-transform":"rotate(0deg)"},{"duration": 200, "easing": "ease-in-out"});
@@ -128,10 +140,31 @@ function goldenEgg(){
 			});
 			showMessage("恭喜，您中得帅哥数枚");
 		},400);
+		_leftCount=_leftCount-1;
+		if(_leftCount<0){
+			_eggBox.unbind("click");
+			_again.hide();
+		}
+		//如果还有剩余次数
+		if(_leftCount>0){
+			//show play again
+			$(".agin").css({
+				opacity:100,
+				"-webkit-transform":"rotate(360deg)",
+			});
+		}
+		_isReset=false;
 	});
-	this.reset=function(){
+	_again.bind("click",function(e){
+		e.stopPropagation();
+		reset();
+	});
+	var reset=function(){
+		_isReset=true;
+		hideMessage();
 		_Egg.css({
-			"height":110,
+			"width":110,
+			"height":151,
 			"opacity":100
 		});
 		_brokenEgg.css({

@@ -258,15 +258,16 @@ html, body {
   color: #fff;
   padding: 4px;
   text-align: center;
-  left: 246px;
+  left: 70%;
   bottom: -5px;
+  z-index: 2000;
 }
-/* line 235, eggSass/sass/goldenEgg.scss */
+/* line 236, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox {
   width: 100%;
   background-size: 100% auto;
 }
-/* line 241, eggSass/sass/goldenEgg.scss */
+/* line 242, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule {
   background: #fff;
   border-radius: 5px;
@@ -278,26 +279,26 @@ html, body {
   padding: 3px;
   position: relative;
 }
-/* line 252, eggSass/sass/goldenEgg.scss */
+/* line 253, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border {
   border: 1px dashed #686868;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-/* line 257, eggSass/sass/goldenEgg.scss */
+/* line 258, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border ul {
   margin-top: 2.08333em;
   margin-left: 1.25em;
   margin-bottom: 1em;
 }
-/* line 261, eggSass/sass/goldenEgg.scss */
+/* line 262, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border ul li {
   color: #000;
   font-size: 0.91667em;
   line-height: 1.66667em;
 }
-/* line 267, eggSass/sass/goldenEgg.scss */
+/* line 268, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .dash-border p {
   margin-top: 2.08333em;
   color: #000;
@@ -306,7 +307,7 @@ html, body {
   line-height: 1.66667em;
   margin-left: 1.25em;
 }
-/* line 276, eggSass/sass/goldenEgg.scss */
+/* line 277, eggSass/sass/goldenEgg.scss */
 .wrapper .rulesbox .rule .title {
   position: absolute;
   top: 3px;
@@ -325,35 +326,35 @@ html, body {
 *hammerEffect
 */
 @keyframes hammerEffect {
-  /* line 297, eggSass/sass/goldenEgg.scss */
+  /* line 298, eggSass/sass/goldenEgg.scss */
   0% {
     background: red;
     left: 0px;
     top: 0px;
   }
 
-  /* line 298, eggSass/sass/goldenEgg.scss */
+  /* line 299, eggSass/sass/goldenEgg.scss */
   25% {
     background: yellow;
     left: 200px;
     top: 0px;
   }
 
-  /* line 299, eggSass/sass/goldenEgg.scss */
+  /* line 300, eggSass/sass/goldenEgg.scss */
   50% {
     background: blue;
     left: 200px;
     top: 200px;
   }
 
-  /* line 300, eggSass/sass/goldenEgg.scss */
+  /* line 301, eggSass/sass/goldenEgg.scss */
   75% {
     background: green;
     left: 0px;
     top: 200px;
   }
 
-  /* line 301, eggSass/sass/goldenEgg.scss */
+  /* line 302, eggSass/sass/goldenEgg.scss */
   100% {
     background: red;
     left: 0px;
@@ -363,35 +364,35 @@ html, body {
 
 /* Firefox */
 @-moz-keyframes hammerEffect {
-  /* line 306, eggSass/sass/goldenEgg.scss */
+  /* line 307, eggSass/sass/goldenEgg.scss */
   0% {
     background: red;
     left: 0px;
     top: 0px;
   }
 
-  /* line 307, eggSass/sass/goldenEgg.scss */
+  /* line 308, eggSass/sass/goldenEgg.scss */
   25% {
     background: yellow;
     left: 200px;
     top: 0px;
   }
 
-  /* line 308, eggSass/sass/goldenEgg.scss */
+  /* line 309, eggSass/sass/goldenEgg.scss */
   50% {
     background: blue;
     left: 200px;
     top: 200px;
   }
 
-  /* line 309, eggSass/sass/goldenEgg.scss */
+  /* line 310, eggSass/sass/goldenEgg.scss */
   75% {
     background: green;
     left: 0px;
     top: 200px;
   }
 
-  /* line 310, eggSass/sass/goldenEgg.scss */
+  /* line 311, eggSass/sass/goldenEgg.scss */
   100% {
     background: red;
     left: 0px;
@@ -401,21 +402,21 @@ html, body {
 
 /* Safari Chrome */
 @-webkit-keyframes hammerEffect {
-  /* line 315, eggSass/sass/goldenEgg.scss */
+  /* line 316, eggSass/sass/goldenEgg.scss */
   0% {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     transform: rotate(0deg);
   }
 
-  /* line 320, eggSass/sass/goldenEgg.scss */
+  /* line 321, eggSass/sass/goldenEgg.scss */
   25% {
     -webkit-transform: rotate(25deg);
     -moz-transform: rotate(25deg);
     transform: rotate(25deg);
   }
 
-  /* line 326, eggSass/sass/goldenEgg.scss */
+  /* line 327, eggSass/sass/goldenEgg.scss */
   100% {
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
